@@ -1,0 +1,77 @@
+<!-- views/chatbot.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #chat-messages {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .user-message {
+            background-color: #e6e6e6;
+            padding: 8px 12px;
+            border-radius: 16px;
+            max-width: 60%;
+            align-self: flex-end;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 16px;
+            max-width: 60%;
+            align-self: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .option-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .option-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 16px;
+            margin: 4px;
+            cursor: pointer;
+        }
+
+        /* .logo {
+            float: left;
+            width: 60px;
+            height: 30px;
+            background: #555;
+
+        } */
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="chatbot-container" class="chatbot-container">
+        <div id="chat-header" class="chat-header">
+            <h3>Vector</h3>
+            <button id="close-button" class="close-button">&times;</button>
+
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div id="chat-input" class="chat-input">
+            <input type="text" id="message-input" placeholder="Type your message..." />
+            <button id="send-button" class="send-button">Send</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
